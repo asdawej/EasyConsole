@@ -28,8 +28,8 @@ def print_parent():
 
 class EasyConsole(cmd.Cmd):
     intro = '''
-    Welcome to EasyConsole, where we provide fast way to get a path.
-    ================================================================
+        Народы мира не хотят повтореная бедствий  войны. - Сталин
+    =================================================================
     '''
     prompt = '<Console> '
     path_ptr = plb.Path('.').absolute()
