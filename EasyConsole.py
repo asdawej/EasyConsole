@@ -159,7 +159,7 @@ class EasyConsole(cmd.Cmd):
         for i in range(len(_args)):
             if (_subs := self._pathptr_FromArg_Ex(_args[i])):
                 _subs: plb.Path
-                _args[i] = str(_subs.absolute())
+                _args[i] = '"'+str(_subs.absolute())+'"'
             elif isinstance(_args[i], int):
                 _args[i] = str(_args[i])
         _args: list[str]
